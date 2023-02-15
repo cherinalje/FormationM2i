@@ -1,6 +1,6 @@
 
 /**
- * Exercice N°1 - Les Variables & Opérateurs Arithmétiques type chaine de caractère
+ * Exercice N°8 - Les Variables & Opérateurs Arithmétiques type chaine de caractère
  */
 
 
@@ -8,43 +8,27 @@
 const result = document.querySelector('#result')
 
 
-
-
-mot = "",
-
-
- 
- 
-
 //Affichage du titre de l'exercice
-affichage = "<h3><b> Ce mot est-il un Palindrome?</b></h3>"
+affichage = "<h5>Le montant H.T etant de 100€ et le taux de T.V.A de 20%</h5>"
+
+
+
 
 
 //récuperation des saisies utilisateur
-mot= prompt("Veuillez saisir une chaine: ")
-console.log(typeof(mot));
+montantHT= 100 ;
+tauxTVA=0.20 ;
+
+ 
+
+montantTVA = montantHT*tauxTVA;
 
 
-const chars = mot.split('');
-console.table(chars);
+//affichage nom complet + bonjour
 
-
-const motInverse = chars.reverse();
-console.log('reverse:', motInverse);
-
-
-console.log(motInverse.join(""));
-
-affichage += `Le mot est :   ${mot} </br>`
-affichage += `Le mot inversé est :  ${motInverse} </br>`
-
-
-
-
-//Addition de deux variables de type chaine (concaténation) 
-
-
-
+affichage += `Le montant de tva est de     : ${montantTVA}     </br>`
+montantTTC = montantTVA + montantHT;
+affichage += `Le montant ttc est de   :   ${montantTTC} </br>`
 
 
 

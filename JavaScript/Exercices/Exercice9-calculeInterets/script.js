@@ -1,47 +1,40 @@
 
 /**
- * Exercice N°1 - Les Variables & Opérateurs Arithmétiques type chaine de caractère
+ * Exercice N°9 - Les Variables & Opérateurs Arithmétiques type chaine de caractère
  */
+
+
+
+
+
 
 
 //création de la contante result permettant de recuperer un element du DOM id="result"
 const result = document.querySelector('#result')
 
 
-
-
-mot = "",
-
-
- 
- 
-
 //Affichage du titre de l'exercice
-affichage = "<h3><b> Ce mot est-il un Palindrome?</b></h3>"
+affichage = "<h5>Avec un capital initial  de 10000€, placé à 4% pendant 5 ans</h5>"
+
+
+
 
 
 //récuperation des saisies utilisateur
-mot= prompt("Veuillez saisir une chaine: ")
-console.log(typeof(mot));
+capitalIni= 10000 ;
+tauxInteret=0.04 ;
+duree=5
+
+ 
+
+montantTotal = capitalIni*tauxInteret;
 
 
-const chars = mot.split('');
-console.table(chars);
+//affichage nom complet + bonjour
 
-
-const motInverse = chars.reverse();
-console.log('reverse:', motInverse);
-
-
-console.log(motInverse.join(""));
-
-affichage += `Le mot est :   ${mot} </br>`
-affichage += `Le mot inversé est :  ${motInverse} </br>`
-
-
-
-
-//Addition de deux variables de type chaine (concaténation) 
+affichage += `Le montant total des intérêt s'elevera à  : ${montantTotal}     </br>`
+capitalFinal = montantTotal * duree;
+affichage += `Le capital final à l'issue sera de  :   ${capitalFinal} </br>`
 
 
 
