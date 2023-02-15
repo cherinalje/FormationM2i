@@ -1,6 +1,6 @@
 
 /**
- * Exercice N°1 - Les Variables & Opérateurs Arithmétiques type chaine de caractère
+ * Exercice N°6 - Les Variables & Opérateurs Arithmétiques type chaine de caractère
  */
 
 
@@ -10,46 +10,53 @@ const result = document.querySelector('#result')
 
 
 
-mot = "",
-
-
- 
- 
-
 //Affichage du titre de l'exercice
-affichage = "<h3><b> Ce mot est-il un Palindrome?</b></h3>"
+affichage = "<h3><b> Calcule de l'Aire et du Périmètre d'un Carré</b></h3>"
+
+
+
 
 
 //récuperation des saisies utilisateur
-mot= prompt("Veuillez saisir une chaine: ")
-console.log(typeof(mot));
+cote= 5 ;
+
+ 
+
+perimetreCarre = (cote + cote) * 2 ;
+console.log(typeof(perimetreCarre));
+
+aireCarre =  cote * cote;
+console.log(typeof(aireCarre));
+
+affichage += `<ul><li>Le périmetre du carré  =  ${perimetreCarre} </br></li>
+<li>L'aire du carré  = ${aireCarre}</br></li><hr>`
 
 
-const chars = mot.split('');
-console.table(chars);
+affichage += "<h3><b> Calcule de l'Aire et du Périmètre d'un Rectangle</b></h3>"
 
+longueur=7;
+largeur=5;
+perimetreRectangle = (longueur + largeur) * 2 ;
+console.log(typeof(perimetreRectangle));
 
-const motInverse = chars.reverse();
-console.log('reverse:', motInverse);
+aireRectangle =  longueur * largeur;
+console.log(typeof(aireRectangle));
 
+//affichage nom complet + bonjour
 
-console.log(motInverse.join(""));
-
-affichage += `Le mot est :   ${mot} </br>`
-affichage += `Le mot inversé est :  ${motInverse} </br>`
-
-
-
-
-//Addition de deux variables de type chaine (concaténation) 
-
-
-
-
-
+affichage += `<ul><li>Le périmetre du rectangle  =  ${perimetreRectangle} </br></li>
+<li>L'aire du rectangle  = ${aireRectangle}</br></li>`
 
 
 result.innerHTML += affichage
+
+
+
+
+
+
+
+
 
 
 

@@ -17,7 +17,7 @@ mot = "",
  
 
 //Affichage du titre de l'exercice
-affichage = "<h3><b> Ce mot est-il un Palindrome?</b></h3>"
+affichage = "<h3><b> Traitement de chaine de caractère</b></h3>"
 
 
 //récuperation des saisies utilisateur
@@ -28,14 +28,14 @@ console.log(typeof(mot));
 const chars = mot.split('');
 console.table(chars);
 
-
 const motInverse = chars.reverse();
 console.log('reverse:', motInverse);
 
 
 console.log(motInverse.join(""));
 
-affichage += `Le mot est :   ${mot} </br>`
+
+affichage += `Vous avez saisi le mot :   ${mot} </br>`
 affichage += `Le mot inversé est :  ${motInverse} </br>`
 
 

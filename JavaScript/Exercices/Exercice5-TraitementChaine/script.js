@@ -10,38 +10,39 @@ const result = document.querySelector('#result')
 
 
 
-mot = "",
+phrase = "",
 
 
  
  
 
 //Affichage du titre de l'exercice
-affichage = "<h3><b> Ce mot est-il un Palindrome?</b></h3>"
+affichage = "<h3><b> Traitement de chaine de caractère</b></h3>"
 
 
 //récuperation des saisies utilisateur
-mot= prompt("Veuillez saisir une chaine: ")
-console.log(typeof(mot));
+phrase= prompt("Veuillez saisir une phrase: ")
+console.log(typeof(phrase));
 
 
-const chars = mot.split('');
-console.table(chars);
-
-
-const motInverse = chars.reverse();
-console.log('reverse:', motInverse);
-
-
-console.log(motInverse.join(""));
-
-affichage += `Le mot est :   ${mot} </br>`
-affichage += `Le mot inversé est :  ${motInverse} </br>`
+const words = phrase.split(' ');
+console.table(words);
 
 
 
 
-//Addition de deux variables de type chaine (concaténation) 
+const minuscule = phrase.toLowerCase()
+console.log(minuscule.toLowerCase());
+
+const premiereLettre = phrase.strike()
+console.log(premiereLettre.strike())
+
+
+
+affichage += `Vous avez saisi la phrase  :   ${phrase} </br>`
+affichage += `La chaine en miniscule  :   ${minuscule} </br>`
+affichage += `La mise en tableau :   ${phrase} </br>`
+affichage += `La chaine après traitement :  ${premiereLettre} </br>`
 
 
 
@@ -53,4 +54,15 @@ result.innerHTML += affichage
 
 
 
+// const str = 'The quick brown fox jumps over the lazy dog.';
 
+// const words = str.split(' ');
+// console.log(words[3]);
+// // Expected output: "fox"
+
+// const chars = str.split('');
+// console.log(chars[8]);
+// // Expected output: "k"
+
+// const strCopy = str.split();
+// console.log(strCopy)
