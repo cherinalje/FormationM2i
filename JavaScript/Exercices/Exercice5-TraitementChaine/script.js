@@ -1,6 +1,6 @@
 
 /**
- * Exercice N°1 - Les Variables & Opérateurs Arithmétiques type chaine de caractère
+ * Exercice N°5 - Les Variables & Opérateurs Arithmétiques type chaine de caractère
  */
 
 
