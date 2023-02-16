@@ -57,5 +57,6 @@ legumes.splice(2,2);
 console.table(legumes);
 
 // Ajouter des éléments à une position donnée [splice(index, nb, value)}
+//0 indique qu'on ne supprime aucun element mais qu'on ajoute un autre element "concombre"
 legumes.splice(2,0,"Concombre");
 console.table(legumes);

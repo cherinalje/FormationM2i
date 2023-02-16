@@ -43,6 +43,7 @@ else {
 // Exemple 1 => Avec un Booleen
 //var compte = -200;
 var estCrediteur = (compte > 0);
+console.log(typeof(estCrediteur));//booleen
 if (estCrediteur)
     console.log("Votre compte est créditeur (avec un bool)!");
 else
@@ -170,6 +171,7 @@ switch (expr) {
         break;
     default:
         console.log(`Désolé, nous sommes à court de ${expr}.`);
+        break;
 }
 
 

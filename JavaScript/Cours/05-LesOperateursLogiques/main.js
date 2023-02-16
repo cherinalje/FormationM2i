@@ -12,7 +12,7 @@ const result = document.querySelector('.result');
 */
 
 // Exemple de vérification si un nombre se situe dans un range de valeurs
-var resultat;
+var resultat='';
 var nb = Number(prompt("Veuillez saisir un nombre entre 1 et 3"));
 if ((nb >= 1) && (nb <= 3)) {
     resultat=`Le nombre ${nb} est bien supérieur ou égal à 1 ET inférieur ou égal à 3.`;
@@ -29,7 +29,7 @@ result.innerHTML=resultat;
 */
 
 // Exemple de vérification si un nombre est inférieur à 1 ou supérieur à 3
-resultat;
+resultat='';
 nb = Number(prompt("Veuillez saisir un nombre strictement inférieur à 1 ou supérieur à 3"));
 if ((nb < 1) || (nb > 3)) {
     resultat=`Le nombre ${nb} est bien inférieur à 1 OU supérieur à 3.`;
