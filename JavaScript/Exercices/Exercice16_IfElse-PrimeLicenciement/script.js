@@ -20,26 +20,34 @@ affichage = ""
 
 
 //récuperation des saisies utilisateur
-var nb1=0;
-nb2=0;
+var age=0;
+anciennete=0;
+derniersalaire=0;
+indemnite = 0
 
 
 
 
 
-nb1 = Number(prompt("Veuillez entrer un nombre"));
-nb2 = Number(prompt("Veuillez entrer un autre nombre"));
+age = parseInt(prompt("Veuillez entrer votre age"));
+anciennete = parseInt(prompt("Veuillez entrer votre ancienneté"));
+derniersalaire = parseInt(prompt("Veuillez entrer votre dernier salaire"));
 
 
 
 //utilisation de la condition if
 
-if (lettre == voyelles[""] && lettre != consonne)
-    affichage += `la lettre ${voyelles} est une voyelle`
+if (anciennete>=1 && anciennete<10)
+    affichage += `le montant de l'indemnité pour un salire de ${age} et avec une ancienneté de ${anciennete} s'elève à ${(derniersalaire/2)*anciennete}`
 
-else
-    affichage += `la lettre ${consonne} est une consonne`
-
+else if (anciennete>10 && age <=45 )
+affichage += `le montant de l'indemnité pour un salire de ${age} et avec une ancienneté de ${anciennete} s'elève à ${(derniersalaire)*anciennete}`
+else if(anciennete>10 && age >45 && age <=49)
+affichage += `le montant de l'indemnité pour un salire de ${age} et avec une ancienneté de ${anciennete} s'elève à ${(derniersalaire*2)*anciennete}`
+else if(anciennete>10 && age >=50)
+affichage += `le montant de l'indemnité pour un salire de ${age} et avec une ancienneté de ${anciennete} s'elève à ${(derniersalaire*5)*anciennete}`
+else 
+affichage += `Vous n'avez pas droit à une indemnité`
 //affichage 
 
 

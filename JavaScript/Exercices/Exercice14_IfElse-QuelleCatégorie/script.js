@@ -20,25 +20,40 @@ affichage = ""
 
 
 //récuperation des saisies utilisateur
-var nb1=0;
-nb2=0;
+var ab=0;
+    bc=0;
+    ac=0;
+
+abc=0;
 
 
 
+ab = Number(prompt("Veuillez entrer la longueur du segment ab"));
+bc = Number(prompt("Veuillez entrer la longueur du segment bc"));
+ac = Number(prompt("Veuillez entrer la longueur du segment ca"));
 
 
-nb1 = Number(prompt("Veuillez entrer un nombre"));
-nb2 = Number(prompt("Veuillez entrer un autre nombre"));
 
+//utilisation de la condition switch
+switch (abc) {
+    case ab == ac && ab==bc :
+        affichage += `le triangle est equilateral`
+        break;
+    case ab == ac && ab!=bc:
+        affichage += `le triangle est isocèle en `
+        break;
+    case bc == ab && bc != ac:
+        affichage += `le triangle est isocèle en`
+        break;
+    case ac == bc && ac != ab:
+        affichage += `le triangle est isocèle en`
+        break;
+    case ab != bc && ab != ac && bc != ac:
+        affichage += `le triangle n'est isocèle ni en A ni en B ni en C`
+        break;
 
+}
 
-//utilisation de la condition if
-
-if (lettre == voyelles[""] && lettre != consonne)
-    affichage += `la lettre ${voyelles} est une voyelle`
-
-else
-    affichage += `la lettre ${consonne} est une consonne`
 
 //affichage 
 

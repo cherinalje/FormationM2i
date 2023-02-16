@@ -21,8 +21,11 @@ affichage = ""
 
 //récuperation des saisies utilisateur
 var nb1=0;
-nb2=0;
+    nb2=0;
 
+
+    
+    nb3= nb1/nb2;
 
 
 
@@ -30,15 +33,15 @@ nb2=0;
 nb1 = Number(prompt("Veuillez entrer un nombre"));
 nb2 = Number(prompt("Veuillez entrer un autre nombre"));
 
+if (nb3 === parseInt(nb3))
+affichage += `le nombre ${nb1} est divisible par ${nb2}`
+else 
+affichage += `le nombre ${nb1} n'est pas divisible par ${nb2}`
 
 
 //utilisation de la condition if
 
-if (lettre == voyelles[""] && lettre != consonne)
-    affichage += `la lettre ${voyelles} est une voyelle`
 
-else
-    affichage += `la lettre ${consonne} est une consonne`
 
 //affichage 
 

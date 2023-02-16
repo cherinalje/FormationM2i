@@ -1,11 +1,6 @@
 /**
- * Exercice N°13 - Les Variables & Opérateurs Arithmétiques type chaine de caractère
+ * Exercice N°13 - Les structures conditionnelles
  */
-
-
-
-
-
 
 
 //création de la contante result permettant de recuperer un element du DOM id="result"
@@ -16,38 +11,33 @@ const result = document.querySelector('#result')
 affichage = ""
 
 
-
-
-
 //récuperation des saisies utilisateur
-var nb1=0;
-nb2=0;
+var ageEnfant = 0;
+
+ageEnfant = Number(prompt("Veuillez entrer un nombre"));
 
 
 
 
+//utilisation de la condition switch
+switch (ageEnfant) {
+    case ageEnfant >= 3 && ageEnfant <= 6:
+        affichage += `Votre enfant est dans la catégorie Baby`
+        break;
+    case ageEnfant > 6 && ageEnfant <= 8:
+        affichage += `Votre enfant est dans la catégorie Poussin`
+        break;
+    case ageEnfant > 8 && ageEnfant <= 10:
+        affichage += `Votre enfant est dans la catégorie Pupille`
+        break;
+    case ageEnfant > 10 && ageEnfant <= 12:
+        affichage += `Votre enfant est dans la catégorie Minime`
+        break;
+    case ageEnfant > 12:
+        affichage += `Votre enfant est dans la catégorie Cadet`
+        break;
 
-nb1 = Number(prompt("Veuillez entrer un nombre"));
-nb2 = Number(prompt("Veuillez entrer un autre nombre"));
-
-
-
-//utilisation de la condition if
-
-if (lettre == voyelles[""] && lettre != consonne)
-    affichage += `la lettre ${voyelles} est une voyelle`
-
-else
-    affichage += `la lettre ${consonne} est une consonne`
-
-//affichage 
-
-
-
-
-
-
-
+}
 
 
 
