@@ -3,7 +3,7 @@
  */
 
 // Création de la constante result permettant de recupérer l'élément HTML class="result"
-const result = document.querySelector('.result');
+const result = document.querySelector('#result');
 
 /*
     La boucle Tant que : while
@@ -11,35 +11,37 @@ const result = document.querySelector('.result');
 
 // Exemple de boucle while : Compter jusqu'a 10
 var i = 1;
-while (i <= 10) {
+while (i <= 50) {
     console.log(`La boucle While s'est éxécutée ${i} fois.`);
     i++;// Attention aux boucles infinies
 }
-
+console.log(i);
 /*
     La boucle Faire tant que : Do...while
 */
 
 // Exemple de boucle do...while : Compter jusqu'a 10
-var i = 51;
+//var i = 51;
 do {
     console.log(`La boucle Do...While s'est éxécutée ${i} fois.`);
     i++;// Attention aux boucles infinies
-} while (i <= 50)
+} while (i < 50)
 
 /*
-    La boucle Pour : For (var intération ; Condition de sortie ; incrémentation)
+    La boucle Pour : for (var itération ; Condition de sortie ; incrémentation variable itération)
 */
 
 // Exemple de boucle for : Compter jusqu'a 10
-i = 1;
-for (i = 1; i <= 10; i++) {
-    console.log(`La boucle For s'est éxécutée ${i} fois.`);
+let k;
+for ( k = 1; k <= 10; k++) {
+    console.log(`La boucle For s'est éxécutée ${k} fois.`);
 }
-
+console.log(k);
+//console.log(i);
 // Exemple PPT itération jourSem
-var jourSem = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
-for (var i = 0; i < jourSem.length; i++){
+let jourSem = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+for (let i = 0; i < jourSem.length; i++){
+    w = i;
     if(i==0){
         console.log("Debut de la semaine");
         continue;
@@ -49,6 +51,8 @@ for (var i = 0; i < jourSem.length; i++){
         break;
     }
 }
+
+console.log(w);
 
     /**
      * EXERCICE
@@ -87,8 +91,8 @@ var contact = {
 }
 // Exemple de boucle for...in 
 for (var key in contact) {
-    //console.log(key);//Permet d'afficher les clés
-    //console.log(contact[key]);//Permet d'afficher les infos pour chaque clé
+    console.log(key);//Permet d'afficher les clés
+    console.log(contact[key]);//Permet d'afficher les infos pour chaque clé
     console.log(key + " : " + contact[key]);//Permet d'afficher les infos pour chaque clé
 }
 
