@@ -10,9 +10,12 @@ const result = document.querySelector('#result');
 // Récupération et stockage des saisie utilisateur
 
 
+affichage = `<b>Les tables de Multiplication de 1 à 10</b>`;
 
+for (i =1 ; i<=10 ; i++){
+affichage += 
 
-
+}
 
 
 
