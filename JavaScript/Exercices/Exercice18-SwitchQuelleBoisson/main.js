@@ -8,7 +8,7 @@ choixUtilisateur = prompt("entrez votre choix de boisson")
 switch (true){
     case 
         choixUtilisateur = "eau":
-        console.log("")
+        con.break
 
     break;
     case "vous avez choisi":
@@ -20,4 +20,4 @@ switch (true){
     case :
     break;
 }
-result.innerHTML = `Vous avez choisi <b>${choixUtilisateur} </b> et
+result.innerHTML = `Vous avez choisi <b>${choixUtilisateur} </b> et 
