@@ -4,6 +4,9 @@ import express from "express";
 import ip from "ip";
 //import 'ip' depuis la librairie node_modules
 
+import {success} from "./helper.js"
+//import depuis fichier helper qu'on a créé
+
 
 
 // création d'une instance de express
@@ -163,13 +166,29 @@ app.get('/data/:id', (req, res) => {
     res.json(data[id-1])
 
 })
+
+app.get('/multiparams/:name/:age',(req,res)=>{
+    let nom = req.params.name;
+    let age = parseInt(req.params.age)
+    res.send(`Bonjour ${nom}! Vous avez ${age}ans.`)
+})
+
+
+/**
+ * exercice
+ */
+//http://localhost:7777/data/:id
+app.get('/data/:id', (req, res) => {
+    
+    const id = parseInt(req.params.id)
+    const cours = data [id-1];
+    let message = cours? "un cours a été trouvé" : "ce cours n'existe pas!";
+    
+    res.json(success( message , cours))
+
+})
 /**
  * SERVEUR
  */
-
-
-
-
-
-//instance de serveur
+//instance  ou écoute du port serveur
 app.listen(port, () => console.log("Ip: " + ipAdress))
