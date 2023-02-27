@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link Style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Title -->
+    <title>COURS JS - LES INPUTS - MODULES ES6</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">COURS JS - LES INPUTS - MODULES ES6</h1>
+            <hr>
+            <p class="lead">Création et utilisation des<mark> INPUTS et EVENTS </mark> en <mark>Javascript</mark>
+            </p>
+        </div>
+        <div class="jumbotron" id="magic">
+            <h2>La Div magique</h2>
+        </div>
+        <div class="jumbotron">
+
+            <h2>Récupération de values sur des Boutons Radio :</h2>
+            <div id="conteneurRadio">
+                <input type="radio" id="choix1" name="choix" value="email" class="increase" >
+                <label for="choix1" class="label">Email</label>
+
+                <input type="radio" id="choix2" name="choix" value="telephone" class="increase" checked>
+                <label for="choix2" class="label">Téléphone</label>
+
+                <input type="radio" id="choix3" name="choix" value="courrier" class="increase">
+                <label for="choix3" class="label">Courrier</label>
+            </div>
+            <div>
+                <button id="btnValider" class="btn btn-primary">Envoyer</button>
+            </div>
+
+        </div>
+        <div class="jumbotron">
+
+            <span class="resultat">Vous avez séléctionné : </span>
+            <span class="resultat" id="result"></span>
+
+        </div>
+        <div class="jumbotron">
+
+            <h2>Récupération de values sur des checkbox :</h2>
+            <div id="conteneurCheckBox">
+                <input type="checkbox" id="langage1" name="langage" value="c#" class="increase" checked>
+                <label for="langage1" class="label">C#</label>
+
+                <input type="checkbox" id="langage2" name="langage" value="c++" class="increase">
+                <label for="langage2" class="label">C++</label>
+
+                <input type="checkbox" id="langage3" name="langage" value="c" class="increase">
+                <label for="langage3" class="label">C</label>
+
+                <input type="checkbox" id="langage4" name="langage" value="java" class="increase">
+                <label for="langage4" class="label">Java</label>
+
+                <input type="checkbox" id="langage5" name="langage" value="javascript" class="increase">
+                <label for="langage5" class="label">Javascript</label>
+
+                <input type="checkbox" id="langage6" name="langage" value="python" class="increase">
+                <label for="langage6" class="label">Python</label>
+            </div>
+            <div>
+                <button id="chkValider" class="btn btn-primary">Envoyer</button>
+            </div>
+
+        </div>
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <td scope="col">#</td>
+                    <td scope="col">Langage</td>
+                </thead>
+                <tbody id="result2">
+
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+    </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./module/index.js"></script>
+</body>
+
+</html>

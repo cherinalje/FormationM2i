@@ -1,0 +1,28 @@
+
+.resultat{
+    font-size: 25px;
+}
+
+.label{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.increase{
+    width:20px;
+    height:20px;
+}
+
+#magic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: orangered;
+    border-radius: 30px;
+    color: white;
+}
+
+.conteneurCheckBox{
+    font-size: 45px;
+}
