@@ -3,7 +3,7 @@
  */
 
 // Déclaration de deux tableaux numériques
-var legumes = ["Poireaux", "Concombre", "Epinard"]; //declaration de deux manières differentes
+var legumes = ["Poireaux", "Concombre", "Epinard"];
 var fruits = new Array("Raisin", "Bananes","Abricot");
 
 // Affichage des deux tableaux
@@ -25,15 +25,15 @@ var zoo = [
     {
         pseudo:"Simba",
         espece:"Lion",
-        contient:"Afrique"
+        continent:"Afrique"
     },
     {
         pseudo:"Tony",
         espece:"Kangourou",
-        contient:"Océanie"
+        continent:"Océanie"
     }
 ];
 
 // Afficher dans la console le pseudo du Lion et du Kangoroo (Avec une concaténation) 
 console.table(zoo);
-console.log("Venez découvrir dans notre zoo "+zoo[0].["pseudo"]+" et "+zoo[1].pseudo);//pareil ici deux manières d'afficher le pseudo
+console.log("Venez découvrir dans notre zoo "+zoo[0]["pseudo"] + " et " + zoo[1].pseudo);

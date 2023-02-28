@@ -36,28 +36,29 @@ if (compte > 0) {
     console.log("Vous avez " + compte + " €");
 }
 else {
-    console.log("Votre compte est débiteur!");
+    console.log("Votre compte est débiteur ou nul!");
     console.log("Vous avez " + compte + " €");
 }
 
 // Exemple 1 => Avec un Booleen
 //var compte = -200;
 var estCrediteur = (compte > 0);
-console.log(typeof(estCrediteur));//booleen
+console.log(typeof (estCrediteur));
 if (estCrediteur)
     console.log("Votre compte est créditeur (avec un bool)!");
 else
     console.log("Votre compte est débiteur ou nul ( avec un bool)!");
 
 // Exemple avec un Booleen
-var estVrai = true;
+var estVrai = false;
 if (estVrai)
     console.log("C'est vrai!");
 else
     console.log("C'est faux!");
 
 // Exemple 2 => Avec une valeur numérique
-var age = prompt("Veuillez saisir votre âge :");
+//var age = Number(prompt("Veuillez saisir votre âge :"));
+var age = 25
 console.log(typeof (age));
 
 if (age >= 18)
@@ -68,15 +69,8 @@ else
 /*
     Avec Sinon Si (Nouveau test logique)
 */
-var compte = 300;
-if (compte > 0)
-    console.log("Vous êtes créditeur!");
-else if (compte == 0)
-    console.log("Le solde de votre compte est nul");
-else
-    console.log("Vous êtes débiteur!");
 
-var compte = 300;
+var compte = -200;
 if (compte > 0)
     console.log(`Vous avez ${compte} €, vous êtes créditeur!`);
 else if (compte == 0)
@@ -84,6 +78,20 @@ else if (compte == 0)
 else
     console.log(`Vous avez ${compte} €, vous êtes débiteur!`);
 
+
+
+
+
+if (compte > 0)
+    console.log(`Vous avez ${compte} €, vous êtes créditeur!`);
+else
+    if (compte == 0)
+        console.log(`Vous avez ${compte} €, solde est nul!`);
+    else
+        if (compte < 0)
+            console.log(`Vous avez ${compte} €, vous êtes débiteur!`);
+        else
+            console.log(`Impossible!`);
 
 /*
     Avec Opérateur logiques &&
@@ -160,6 +168,7 @@ switch (civilite) {
         break;
 }
 
+
 const expr = 'Papayes';
 switch (expr) {
     case 'Oranges':
@@ -171,6 +180,47 @@ switch (expr) {
         break;
     default:
         console.log(`Désolé, nous sommes à court de ${expr}.`);
+        break;
+}
+
+const monNumber = 5;
+
+switch (monNumber) {
+    case 5:
+        console.log('1');
+        break;
+    case 4:
+        console.log('2');
+        break;
+    case 3:
+        console.log('3');
+        break;
+    case 2:
+        console.log('4');
+        break;
+    case 1:
+        console.log('5');
+        break;
+    default:
+        console.log('Default!');
+        break;
+}    
+
+switch (true) {
+    case monNumber <= 0 :
+        console.log("C'est négatif ou null");
+        break;
+    case monNumber >= 1 && monNumber <=3:
+        console.log('1 => 3');
+        break;
+    case monNumber >= 4 && monNumber <=6:
+        console.log('4 => 6');
+        break;
+    case monNumber >= 7 && monNumber <=9:
+        console.log('7 => 9');
+        break;
+    default:
+        console.log("C'est supérieur à 10!");
         break;
 }
 

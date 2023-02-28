@@ -1,0 +1,18 @@
+.lead {
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.myCard {
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 5px;
+}

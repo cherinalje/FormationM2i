@@ -1,62 +1,43 @@
-// commentaire en ligne
+// Commentaire sur une ligne
+
 /**
- * commentaire multiligne
- * 
- * 
- * 
+ * Commentaire Multiligne
  */
-// declaration d'une variable (ESS)
+
+// Déclaration d'une variable (ES5)
 var prenom;
 
+// Affectation de valeur à la variable
+prenom = "anthony";
+// prenom = [A,n,t,h,o,n,y, ,j,e, ,];
 
-// affectation de valeur à la variable
-prenom= "anthony"
-//prenom= [A,n,t,h,o,n,y]
+// Absence de type? Non => String (Chaine de caractères)
+console.log(typeof(prenom)+ " : " + prenom);
+console.log(prenom);
+console.log("A la troisième lettre de ma variable il y a : " + prenom[2]);
 
-prenom[0]=prenom[0].toUpperCase();
+// Déclaration et affectation de valeur à la volée
+var maVar = 5
 
-//absence de type? non =>(chaine de caractere)
-console.log(typeof(prenom) +":"+prenom);
-console.log("Ala premeire lettre de ma variable il y a :"+ prenom[3]);
+// Absence de type? Non => Number
+console.log(typeof(maVar)+ " : " + maVar)
+console.log(maVar);
 
-
-// declaration et affectation de valeur à la volée
-// var maVar=5;
-
-
-
-// console.log(typeof(maVar) +":"+ maVar.toString());
-// console.log(maVar);
-
-// reaffectation de valeur
+// Ré-affectation de valeur
 maVar = 0.5
 
-console.log(typeof(maVar) +":"+ maVar); // si on ne met pas tostring ça fonctionne quand meme
+// Absence de type? Non => Number
+console.log(typeof(maVar)+ " : " + maVar);
+console.log(maVar);
+
+// Ré-affectation de valeur
+maVar = true
+
+// Absence de type? Non => Booléeene
+console.log(typeof(maVar)+ " : " + maVar);
 console.log(maVar);
 
 
-//type grand nombre (bigInt)
-var grandNombre = 900254587544552145n;
-
-
-console.log(typeof(grandNombre));
-console.log(grandNombre);
-
-
-
-//declaration et affectation de valeur à la volée
-var maVare=true;
-
-console.log(typeof(maVare) +":"+ maVare.toString());
-console.log(maVare);
-
-
-
-// affectation de valeur à la variable
-prenom= "Anthony"
-
-
-
-//absence de type? non =>(chaine de caractere)
-console.log(typeof(prenom) +":"+prenom);
-console.log(prenom);
+// Type grand nombre (BigInt)
+var grandNombre = 9007199254740992n;
+console.log(typeof (grandNombre));
