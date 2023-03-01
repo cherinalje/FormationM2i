@@ -14,3 +14,15 @@
     font-size: 23px;
     margin-bottom: 20px;
 }
+
+.win {
+    color: rgb(0, 112, 51);
+}
+
+.loose {
+    color: brown;
+}
+
+.play {
+    color: rgb(105, 105, 105);
+}
