@@ -1,0 +1,134 @@
+[
+    {
+        "category": "Reférencement",
+        "name": "SEO Premium",
+        "urlImg": "/img/logo-seo-premium.png",
+        "difficulty": 3,
+        "price": 249,
+        "id": 1,
+        "created": "2019-06-16T16:54:46.308Z"
+    },
+    {
+        "category": "Langage de programmation",
+        "name": "C#",
+        "urlImg": "/img/logo-csharp.png",
+        "difficulty": 4,
+        "price": 299,
+        "id": 2,
+        "created": "2019-06-16T16:54:56.308Z"
+    },
+    {
+        "category": "Langage de programmation",
+        "name": "JavaScript",
+        "urlImg": "/img/logo-js.png",
+        "difficulty": 3,
+        "price": 199,
+        "created": "2019-06-16T16:55:06.308Z",
+        "id": 3,
+        "updated": "2022-06-20T21:38:51.833Z"
+    },
+    {
+        "category": "Langage de programmation",
+        "name": "HTML/CSS",
+        "urlImg": "/img/logo-html-css.png",
+        "difficulty": 2,
+        "price": 149,
+        "id": 4,
+        "created": "2019-06-16T16:55:16.308Z"
+    },
+    {
+        "category": "FrameWork",
+        "name": "React",
+        "urlImg": "/img/logo-react.png",
+        "difficulty": "3",
+        "price": 299,
+        "created": "2019-06-16T16:55:26.308Z",
+        "id": 5,
+        "updated": "2022-06-20T20:11:08.918Z"
+    },
+    {
+        "category": "FrameWork",
+        "name": "Vue.Js",
+        "urlImg": "/img/logo-vuejs.png",
+        "difficulty": "2",
+        "price": 299,
+        "id": 6,
+        "created": "2019-06-16T16:55:36.308Z"
+    },
+    {
+        "category": "FrameWork",
+        "name": "Angular",
+        "urlImg": "/img/logo-angular.png",
+        "difficulty": "4",
+        "price": 299,
+        "created": "2019-06-16T16:55:46.308Z",
+        "id": 7,
+        "updated": "2022-06-20T20:12:40.176Z"
+    },
+    {
+        "category": "Outils collaboratifs",
+        "name": "Git - GitFlow",
+        "urlImg": "/img/logo-git.png",
+        "difficulty": "3",
+        "price": 199,
+        "created": "2019-06-16T16:55:56.308Z",
+        "id": 8,
+        "updated": "2022-06-20T22:44:53.721Z"
+    },
+    {
+        "category": "FrameWork",
+        "name": "Sass",
+        "urlImg": "/img/logo-sass.png",
+        "difficulty": "3",
+        "price": 149,
+        "id": 9,
+        "created": "2019-06-16T16:56:06.308Z"
+    },
+    {
+        "category": "Langage de programmation",
+        "name": "VisualBasic.NET",
+        "urlImg": "/img/logo-VB.png",
+        "price": "258",
+        "difficulty": "2",
+        "created": "2022-06-20T01:57:39.617Z",
+        "id": 10,
+        "updated": "2022-06-20T22:35:04.736Z"
+    },
+    {
+        "category": "Langage de programmation",
+        "name": "C++",
+        "urlImg": "/img/logo-Cplusplus.png",
+        "price": "129",
+        "difficulty": 3,
+        "created": "2022-06-20T20:19:28.396Z",
+        "id": 11,
+        "updated": "2022-06-20T20:26:18.834Z"
+    },
+    {
+        "category": "Langage de programmation",
+        "name": "Ruby",
+        "price": "199",
+        "difficulty": "2",
+        "id": 12,
+        "urlImg": "/img/logo-ruby.png",
+        "created": "2022-11-19T16:06:47.595Z"
+    },
+    {
+        "category": "Langage de programmation",
+        "name": "Cobol",
+        "price": "199",
+        "difficulty": "2",
+        "id": 13,
+        "urlImg": "/img/logo-cobol.png",
+        "created": "2022-11-20T17:27:22.686Z"
+    },
+    {
+        "category": "Langage de programmation",
+        "name": "C",
+        "price": "299",
+        "difficulty": "3",
+        "id": 14,
+        "urlImg": "/img/logo-C.png",
+        "created": "2022-11-20T18:58:22.487Z"
+    }
+]

@@ -1,0 +1,26 @@
+{
+  "name": "1-premierprojet",
+  "version": "1.0.0",
+  "description": "A simple node project to learn nodeJs technology",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "PetitVulcan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "ip": "^1.1.8",
+    "meta": "^2.2.25",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16"
+  }
+}
