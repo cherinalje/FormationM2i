@@ -1,0 +1,14 @@
+.banner{
+    align-items: center;    
+    display:flex;    
+    justify-content: center;
+    color: white;
+    background-color: rgb(40,44,52);
+   border-bottom: 2px solid red;
+}
+img{
+height: 150 px;
+}
+.description{
+transform: translateX(30%);
+}
