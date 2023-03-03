@@ -1,4 +1,10 @@
 
+    .image{
+        height: 300 px;
+        border-radius: 25px;
+    
+    }
+
 .lorem{
     font-style: italic;
 }

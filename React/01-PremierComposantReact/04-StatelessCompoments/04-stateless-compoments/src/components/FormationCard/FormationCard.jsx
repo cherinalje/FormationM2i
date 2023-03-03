@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import './FormationCard.css';
+import CareScale from '../CareScaleCompoment/CareScale';
 
 const FormationCard = ({cours, index}) =>{
 {/** cours qu'on va chercher dans courlist */}
     return (
-        <div className="card" key={index}> 
-        
+        <div className="card formation" key={index}> 
+
             <div className="card-title">
                 {cours.name}
             </div>
 
             <div>
-                <img className='img' src={cours.logo} alt={"Logo du Cours" + cours.name} />
+                <img className='image' src={cours.logo} alt={"Logo du Cours" + cours.name} />
             </div>
 
             <div className="category">
@@ -18,8 +20,9 @@ const FormationCard = ({cours, index}) =>{
             </div>
 
             <div className="difficulty">
-                <span className='diff-label'>Difficulté : {cours.difficulte}</span>
+                <span className='diff-label'>Difficulté : </span>
                 {/**création du composant CareScale */}
+                <CareScale scalevalue={cours.difficulte} className="star"/>
             </div>
 
             <div className="price">

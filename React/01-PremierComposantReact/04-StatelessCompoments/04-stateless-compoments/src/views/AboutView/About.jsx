@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
+import './About.css';
 
-class About extends Component {
-    render() {
+
+const About = () =>{
+
         return (
             <div>
-                <h1>A propos de cette Application</h1>
+                <h1>A propos de cette Application Web ...</h1>
+
                 <img src="./img/logo512.png" alt="Une Superbe Photo!" />
+
                 <div className='m-1 author'>
-                    <span>Author</span>
+
+                    <span>Ce cours</span>
+                    <span className='value'>React c'est trop Facile</span>
                 </div>
-                <div className="m-1"></div>
-                <span className='value'>Anthony Di Persio</span>
             </div>
+
         );
-    }
+    
 }
 
 export default About;

@@ -5,6 +5,11 @@ import './FormationList.css'
 
 
 const FormationList = () => {
+    const [activeCategory , setActiveCategory] = useState('');
+
+    const categoryList = coursList.map(
+        (acc, cours)=>acc.includes(cours.category)? acc : acc.concat(cours.category)
+        )
     return (
         <div>
             <div className="card-container">

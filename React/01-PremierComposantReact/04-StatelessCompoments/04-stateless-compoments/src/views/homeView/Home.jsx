@@ -5,7 +5,7 @@ class Home extends Component {
         return (
             <div>
                 <h1>Home Works ...!</h1>
-                <img src="./img/avatar.png" alt="Logo React" />
+                <img className='image' src="./img/avatar.png" alt="Logo React" />
 
                 <p className='lorem'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, fuga.</p>
 
