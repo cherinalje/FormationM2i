@@ -1,0 +1,17 @@
+.banner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(40, 44, 52);
+    border-bottom: 2px solid rgb(226, 13, 23);
+    height: 200px;
+}
+
+.img {
+    height: 100px;
+}
+
+.description {
+    transform: translateX(30%);
+}
