@@ -1,0 +1,23 @@
+.bouton{
+    margin: 20px;
+}
+
+.bouton a{
+    color: white;
+    text-decoration: none;
+}
+
+.bouton a:hover{
+    color: orange;
+    text-decoration: none;
+}
+
+.fontIcon{
+    color: rgb(40, 44, 52);
+    font-size: 35px;
+    margin: 25px;
+}
+
+.fontIcon:hover{
+    color: orange;
+}

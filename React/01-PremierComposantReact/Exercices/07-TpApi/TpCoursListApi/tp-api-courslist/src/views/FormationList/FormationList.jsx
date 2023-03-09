@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import Cart from '../../components/CartComponent/Cart';
 import Category from '../../components/Category/Category';
 import FormationCard from '../../components/FormationCard/FormationCard';
-import { coursList } from '../../datas/CoursList';
+
 import './FormationList.css';
 
 const FormationList = ({ cart, updateCart }) => {
-    const [activeCategory, setActiveCategory] = useState('');//hook
+    const [activeCategory, setActiveCategory] = useState('');
+    const [coursList, setCoursList] = useState([]);
 
     // const categoryList = coursList.map(  <= L'erreur était ici j'ai utilisé la fonction map au lieu de reduce (map n'a pas d'accumulateur)
     const categoryList = coursList.reduce(
